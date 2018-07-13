@@ -1,0 +1,20 @@
+:root{
+  --base-margin: 2em;
+  --item-margin: 0.5em;
+}
+
+.grid{
+display:grid;
+margin: var(--base-margin);
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+.item{
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:var(--item-margin);
+}
+
+.listitem{margin:1em;}
+.listitem img{float:left;padding:2em;}

@@ -1,0 +1,24 @@
+.speaker {
+padding:1em;
+}
+
+.speaker h2{
+margin-left:17em;
+}
+.speaker h3{padding-left:2em;}
+.speaker p{
+padding-left:4em;
+max-width:45em;
+}
+.listitem{
+overflow:auto;
+margin:2em;
+}
+.list_img{
+float:left;
+margin:1em;
+}
+
+.list_img img{
+display:block;
+}

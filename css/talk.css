@@ -1,0 +1,26 @@
+ .talk {
+max-width:45em;
+}
+
+.talk h2{
+padding: 1em;
+}
+.talk h3{
+}
+.talk p{
+max-width:45em;
+}
+.listitem{
+overflow:auto;
+margin:2em;
+}
+.list_img{
+float:left;
+padding:10px;
+margin:10px;
+}
+
+.list_img img{
+display:block;
+background-color:white;
+}

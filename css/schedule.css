@@ -1,0 +1,12 @@
+ .schedule{
+border-color:#303030;
+border-width:3px;
+background-color:#cccccc;
+border-style:solid;
+}
+.schedule td{
+text-align:center;
+padding:1em;
+margin:0;
+horizontal-align:middle;
+}
