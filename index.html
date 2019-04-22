@@ -1,145 +1,263 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="css/grid.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://meetingcpp.com/feed.xml" />
-<title>Meeting C++</title>
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://meetingcpp.com/feed.xml" />
+  <title>Meeting C++</title>
 </head>
+
 <body>
-<section class="header">
-<nav class="menu">
-   <input class="menu-btn" type="checkbox" id="menu-btn" />
-   <label class="menu-icon" for="menu-btn"></label>
-    <ul>
-<li><a href="meetingcpp/">Meeting C++</a><ul><li><a href="meetingcpp/Services.html">Services</a></li>
-<li><a href="meetingcpp/news/">News</a></li><li><a href="meetingcpp/Contact.html">Contact</a></li></ul></li>
-<li><a href="2018/">Conference 2018</a><ul><li><a href="2018/Location.html">Location</a></li><li><a href="2018/Ticketshop.html">Ticketshop</a></li><li><a href="2018/Workshop.html">Workshopday</a></li></ul></li>
-<li><a href="2017/">Conference 2017</a><ul><li><a href="2017/Schedule.html">Schedule</a></li>
-<li><a href="2017/speaker/">Speaker</a></li>
-<li><a href="2017/talks/">Talks</a></li></ul></li>
-<li><a href="blog/">Blog</a><ul>
-<li><a href="blog/blogroll/">Blogroll</a></li></ul></li>
-<li><a href="usergroups/">User Groups</a><ul><li><a href="usergroups/UG Duesseldorf.html">C++ UG D&uuml;sseldorf</a></li></ul></li>
-<li><a href="jobs/">Jobs</a><ul>
-<li><a href="jobs/employerlisting/">Employer Listing</a></li></ul></li>
-<li><a href="CertifiedLibraries/">Certified Libraries</a></li></ul>
-</nav>
-<a class="logo" href="index.html">Meeting C++</a>
+  <!-- navigation -->
+  <section id="navigation" class="hide">
+    <a id="close" onclick="show('navigation')">&times;</a>
+    <nav class="menu">
+      <ul id="menuid2018sdfaerwq">
+        <li><a href="meetingcpp/">Meeting C++</a>
+          <ul>
+            <li><a href="meetingcpp/Services.html">Services</a></li>
+            <li><a href="meetingcpp/news/">News</a></li>
+            <li><a href="meetingcpp/Contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <li><a href="2018/">Conference 2018</a>
+          <ul>
+            <li><a href="2018/Schedule.html">Schedule</a></li>
+            <li><a href="2018/Talks/">Talks</a></li>
+            <li><a href="2018/Speaker/">Speaker</a></li>
+            <li><a href="2018/Location.html">Location</a></li>
+            <li><a href="2018/Workshop.html">Workshopday</a></li>
+          </ul>
+        </li>
+        <li><a href="2017/">Conference 2017</a>
+          <ul>
+            <li><a href="2017/Schedule.html">Schedule</a></li>
+            <li><a href="2017/speaker/">Speaker</a></li>
+            <li><a href="2017/talks/">Talks</a></li>
+          </ul>
+        </li>
+        <li><a href="blog/">Blog</a>
+          <ul>
+            <li><a href="blog/blogroll/">Blogroll</a></li>
+          </ul>
+        </li>
+        <li><a href="usergroups/">User Groups</a>
+          <ul>
+            <li><a href="usergroups/UG Duesseldorf.html">C++ UG D&uuml;sseldorf</a></li>
+          </ul>
+        </li>
+        <li><a href="jobs/">Jobs</a>
+          <ul>
+            <li><a href="jobs/employerlisting/">Employer Listing</a></li>
+            <li><a href="jobs/Meetingcpp_Recruiting.html">Meeting C++ Recruiting</a></li>
+          </ul>
+        </li>
+        <li><a href="CertifiedLibraries/">Certified Libraries</a></li>
+      </ul>
+    </nav>
+  </section>
+  <!-- ./navigation-->
+  <section class="header">
+    <!-- burger icon-->
+    <div class="menu-icon" onclick="show('navigation')"></div>
+    <!-- ./burger icon-->
+    <a class="logo" href="index.html">Meeting C++</a>
 
-<div class="socialmedia">
-<p><a href="https://www.patreon.com/bePatron?u=3512102">
-<img src="https://meetingcpp.com/files/patreon.png">
-</a></p></div><div class="socialmedia">
-<p><a href="https://www.youtube.com/c/MeetingCPP">
-<img style="padding-top:6px;" src="https://meetingcpp.com/files/mcpp/yt.png">
-</a>
-</p></div>
-<div class="socialmedia">
-<p><a href="https://twitter.com/meetingcpp">
-<img src="https://meetingcpp.com/files/twitter.png">
-</a>
-</p></div><div class="socialmedia"><p><a href="https://www.facebook.com/MeetingCpp">
-<img src="https://meetingcpp.com/files/facebook.png">
-</a></p></div>
-<div class="socialmedia"><p><a href="https://www.linkedin.com/company/9278410">
-<img src="https://meetingcpp.com/files/mcpp/logos/li.png">
-</a></p></div>
-<div class="socialmedia"><p><a href="https://plus.google.com/107985477330768591190">
-<img src="https://meetingcpp.com/files/mcpp/gplus-50.png">
-</a></p></div>
-</section> <section id="section">
+    <div class="socialmedia">
+      <p><a href="https://www.patreon.com/bePatron?u=3512102">
+          <img src="https://meetingcpp.com/files/patreon.png">
+        </a></p>
+    </div>
+    <div class="socialmedia">
+      <p><a href="https://www.youtube.com/c/MeetingCPP">
+          <img style="padding-top:6px;" src="https://meetingcpp.com/files/mcpp/yt.png">
+        </a>
+      </p>
+    </div>
+    <div class="socialmedia">
+      <p><a href="https://twitter.com/meetingcpp">
+          <img src="https://meetingcpp.com/files/twitter.png">
+        </a>
+      </p>
+    </div>
+    <div class="socialmedia">
+      <p><a href="https://www.facebook.com/MeetingCpp">
+          <img src="https://meetingcpp.com/files/facebook.png">
+        </a></p>
+    </div>
+    <div class="socialmedia">
+      <p><a href="https://www.linkedin.com/company/9278410">
+          <img src="https://meetingcpp.com/files/mcpp/logos/li.png">
+        </a></p>
+    </div>
+    <div class="socialmedia">
+      <p><a href="https://plus.google.com/107985477330768591190">
+          <img src="https://meetingcpp.com/files/mcpp/gplus-50.png">
+        </a></p>
+    </div>
+  </section>
+  <section id="section">
 
 
-</section><div class="flex-2-cols">
-<div id="main" class="col"> 
+  </section>
+  <div class="flex-2-cols">
+    <div id="main" class="col">
 
-<div><img class="textimg" title="mcpp/2016/loungetrack.jpg" src="https://meetingcpp.com/files/mcpp/2016/loungetrack.jpg" alt="mcpp/2016/loungetrack.jpg" /></div>
-<h1>Welcome to Meeting C++!</h1>
-<div class="grid_300"><img class="grid_img" title="welcomemessage" src="https://meetingcpp.com/files/mcpp/2016/welcomemessage.jpg" alt="welcomemessage" />
-<div class="colitem_span2">
-<p>Hello, Meeting C++ is an independent platform for C++, supporting the C++ community by sharing news, blogs and events for C++. The yearly <a href="2017/">Meeting C++ Conference</a> and the <a href="usergroups/UG Duesseldorf.html">C++ User Group D&uuml;sseldorf</a> is what got Meeting C++ started, and today Jens Weller, the founder of Meeting C++, is fully dedicated to building a global network for C++. With a strong focus on C++, its libraries and community. Also Meeting C++ is an advocate for <a href="usergroups/">local C++ User Groups</a>, and has motivated many to join or start a local group.</p>
-<p><strong><a href="2018/">Meeting C++ 2018</a> is from the 15th - 17th November in Berlin!</strong></p>
-<p><strong>Also check out <a href="https://meetingembedded.com/2018/">Meeting Embedded 2018</a>!</strong></p>
-</div>
-<div class="colitem_span2">
-<p>A lot of time goes into creating C++ content shared through Meeting C++. Its network offers a reach into the C++ community, with a following of over 60k across <a href="https://twitter.com/meetingcpp">Twitter</a>, <a href="https://www.facebook.com/MeetingCpp">Facebook</a>, <a href="https://www.linkedin.com/company/9278410">LinkedIn</a>, <a href="https://plus.google.com/107985477330768591190">G+</a>, <a href="http://www.youtube.com/user/MeetingCPP/">Youtube</a> and <a href="https://www.xing.com/communities/groups/modern-c-plus-plus-1067288">Xing</a>! Once a week the <a href="blog/blogroll/">Meeting C++ blog roll</a> offers an overview into the latest news and blog entries about C++, which are also shared daily via social media. Please <a href="#rss">subscribe to the RSS Feeds</a> to stay up to date with everything at Meeting C++. You also can support the work of Meeting C++ for the C++ Community via <a href="https://www.patreon.com/meetingcpp">Patreon</a>.</p>
-<p>Read about the C++, Qt, ISO Standardization and other C++ related things on the <a href="blog/">Meeting C++ blog</a>. Join our <a href="http://youtube.com/meetingcpp">YouTube channel</a>, or watch "<a href="https://www.youtube.com/watch?v=Bc-UMZfi10o&amp;list=PLRyNF2Y6sca0wcKza1Wp7knSbRtddNhC0">Just C++</a>" and the <a href="https://www.youtube.com/watch?v=xAfveJj9dUA&amp;list=PLRyNF2Y6sca06lulacjysyu8RIwfKgYoY">talks of past conferences</a>!</p>
-</div>
-<img class="grid_img" title="registration" src="https://meetingcpp.com/files/mcpp/2016/registration.jpg" alt="registration" /></div>
-<p>&nbsp;</p><h2>Keynotes at <a href="2018/">Meeting C++ 2018</a></h2>
-<div class="grid_200">
-<ul>
-<li><img class="gridimg" title="mcpp/speaker/andreialexandrescu.jpg" src="https://meetingcpp.com/files/mcpp/speaker/andreialexandrescu.jpg" alt="andreialexandrescu" /></li>
-<li>
-<p style="text-align: center;"><strong>Andrei Alexandrescu</strong></p>
-</li>
-</ul>
-<ul>
-<li><img class="gridimg" title="mcpp/speaker/lili.jpg" src="https://meetingcpp.com/files/mcpp/speaker/lili.jpg" alt="Lisa Lippincott" /></li>
-<li>
-<p style="text-align: center;"><strong>Lisa Lippincott</strong></p>
-</li>
-</ul>
-<ul>
-<li><img class="gridimg" title="mcpp/speaker/nicojosuttis.jpg" src="https://meetingcpp.com/files/mcpp/speaker/nicojosuttis.jpg" alt="nicojosuttis" /></li>
-<li>
-<p style="text-align: center;"><strong>Nicolai Josuttis</strong></p>
-</li>
-</ul>
-</div>
-<p>Get your <a href="2018/Ticketshop.html">ticket now</a>!</p><h1>Meeting C++ Blog</h1>
-<h2><a href="blog/items/TIL--inheriting-constructors--default-parameters-and-enable-if.html">TIL: inheriting constructors, default parameters and enable_if</a></h2>
-<p>published at 26.04.2018 23:11</p>
-<p>... might not mix that well. And its an interesting language detail causing it.</p>
-<h2><a href="blog/items/Thoughts-on-my-recent-Experiment-with-Qt---Templates.html">Thoughts on my recent Experiment with Qt & Templates</a></h2>
-<p>published at 12.04.2018 23:41</p>
-<p>So in March of this year I did play around with two libraries in Qt and boost, to test out some ideas. This post is about ideas and problems I'm currently thinking about.</p>
-<a href="blog/archive/Blog_1.html">More Blog entries</a>
-<h1>Meeting C++ RSS Feeds</h1>
-<div><a name="rss"></a>
-<div class="rssgrid">
-<div class="rssitem"><a href="feed.xml"><img title="rssicon.png" src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> Everything</a></div>
-<div class="rssitem"><a href="news.xml"><img title="rssicon.png" src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> News</a></div>
-<div class="rssitem"><a href="blogen.xml"><img title="rssicon.png" src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> Blog</a></div>
-<div class="rssitem"><a href="blogroll.xml"><img title="rssicon.png" src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> Blogroll</a></div>
-<div class="rssitem"><a name="rss" href="jobs.xml"><img title="rssicon.png" src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> Jobs</a></div>
-</div>
-</div>
-</div><div class="col-right">
+      <div><img class="textimg" title="mcpp/2016/loungetrack.jpg"
+          src="https://meetingcpp.com/files/mcpp/2016/loungetrack.jpg" alt="mcpp/2016/loungetrack.jpg" /></div>
+      <h1>Welcome to Meeting C++!</h1>
+      <div class="grid_300"><img class="grid_img" title="welcomemessage"
+          src="https://meetingcpp.com/files/mcpp/2016/welcomemessage.jpg" alt="welcomemessage" />
+        <div class="colitem_span2">
+          <p>Hello, Meeting C++ is an independent platform for C++, supporting the C++ community by sharing news, blogs
+            and events for C++. The yearly <a href="2017/">Meeting C++ Conference</a> and the <a
+              href="usergroups/UG Duesseldorf.html">C++ User Group D&uuml;sseldorf</a> is what got Meeting C++ started,
+            and today Jens Weller, the founder of Meeting C++, is fully dedicated to building a global network for C++.
+            With a strong focus on C++, its libraries and community. Also Meeting C++ is an advocate for <a
+              href="usergroups/">local C++ User Groups</a>, and has motivated many to join or start a local group.</p>
+          <p><strong><a href="2018/">Meeting C++ 2018</a> is from the 15th - 17th November in Berlin!</strong></p>
+          <p><strong>Also check out <a href="https://meetingembedded.com/2018/">Meeting Embedded 2018</a>!</strong></p>
+        </div>
+        <div class="colitem_span2">
+          <p>A lot of time goes into creating C++ content shared through Meeting C++. Its network offers a reach into
+            the C++ community, with a following of over 60k across <a href="https://twitter.com/meetingcpp">Twitter</a>,
+            <a href="https://www.facebook.com/MeetingCpp">Facebook</a>, <a
+              href="https://www.linkedin.com/company/9278410">LinkedIn</a>, <a
+              href="https://plus.google.com/107985477330768591190">G+</a>, <a
+              href="http://www.youtube.com/user/MeetingCPP/">Youtube</a> and <a
+              href="https://www.xing.com/communities/groups/modern-c-plus-plus-1067288">Xing</a>! Once a week the <a
+              href="blog/blogroll/">Meeting C++ blog roll</a> offers an overview into the latest news and blog entries
+            about C++, which are also shared daily via social media. Please <a href="#rss">subscribe to the RSS
+              Feeds</a> to stay up to date with everything at Meeting C++. You also can support the work of Meeting C++
+            for the C++ Community via <a href="https://www.patreon.com/meetingcpp">Patreon</a>.</p>
+          <p>Read about the C++, Qt, ISO Standardization and other C++ related things on the <a href="blog/">Meeting C++
+              blog</a>. Join our <a href="http://youtube.com/meetingcpp">YouTube channel</a>, or watch "<a
+              href="https://www.youtube.com/watch?v=Bc-UMZfi10o&amp;list=PLRyNF2Y6sca0wcKza1Wp7knSbRtddNhC0">Just
+              C++</a>" and the <a
+              href="https://www.youtube.com/watch?v=xAfveJj9dUA&amp;list=PLRyNF2Y6sca06lulacjysyu8RIwfKgYoY">talks of
+              past conferences</a>!</p>
+        </div>
+        <img class="grid_img" title="registration" src="https://meetingcpp.com/files/mcpp/2016/registration.jpg"
+          alt="registration" />
+      </div>
+      <p>&nbsp;</p>
+      <h2>Keynotes at <a href="2018/">Meeting C++ 2018</a></h2>
+      <div class="grid_200">
+        <ul>
+          <li><img class="gridimg" title="mcpp/speaker/andreialexandrescu.jpg"
+              src="https://meetingcpp.com/files/mcpp/speaker/andreialexandrescu.jpg" alt="andreialexandrescu" /></li>
+          <li>
+            <p style="text-align: center;"><strong>Andrei Alexandrescu</strong></p>
+          </li>
+        </ul>
+        <ul>
+          <li><img class="gridimg" title="mcpp/speaker/lili.jpg"
+              src="https://meetingcpp.com/files/mcpp/speaker/lili.jpg" alt="Lisa Lippincott" /></li>
+          <li>
+            <p style="text-align: center;"><strong>Lisa Lippincott</strong></p>
+          </li>
+        </ul>
+        <ul>
+          <li><img class="gridimg" title="mcpp/speaker/nicojosuttis.jpg"
+              src="https://meetingcpp.com/files/mcpp/speaker/nicojosuttis.jpg" alt="nicojosuttis" /></li>
+          <li>
+            <p style="text-align: center;"><strong>Nicolai Josuttis</strong></p>
+          </li>
+        </ul>
+      </div>
+      <p>Get your <a href="2018/Ticketshop.html">ticket now</a>!</p>
+      <h1>Meeting C++ Blog</h1>
+      <h2><a href="blog/items/TIL--inheriting-constructors--default-parameters-and-enable-if.html">TIL: inheriting
+          constructors, default parameters and enable_if</a></h2>
+      <p>published at 26.04.2018 23:11</p>
+      <p>... might not mix that well. And its an interesting language detail causing it.</p>
+      <h2><a href="blog/items/Thoughts-on-my-recent-Experiment-with-Qt---Templates.html">Thoughts on my recent
+          Experiment with Qt & Templates</a></h2>
+      <p>published at 12.04.2018 23:41</p>
+      <p>So in March of this year I did play around with two libraries in Qt and boost, to test out some ideas. This
+        post is about ideas and problems I'm currently thinking about.</p>
+      <a href="blog/archive/Blog_1.html">More Blog entries</a>
+      <h1>Meeting C++ RSS Feeds</h1>
+      <div><a name="rss"></a>
+        <div class="rssgrid">
+          <div class="rssitem"><a href="feed.xml"><img title="rssicon.png"
+                src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> Everything</a></div>
+          <div class="rssitem"><a href="news.xml"><img title="rssicon.png"
+                src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> News</a></div>
+          <div class="rssitem"><a href="blogen.xml"><img title="rssicon.png"
+                src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> Blog</a></div>
+          <div class="rssitem"><a href="blogroll.xml"><img title="rssicon.png"
+                src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> Blogroll</a></div>
+          <div class="rssitem"><a name="rss" href="jobs.xml"><img title="rssicon.png"
+                src="https://meetingcpp.com/files/rssicon.png" alt="rssicon.png" /> Jobs</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-right">
 
-<h1>Latest Meeting C++ News</h1>
-<h2><a href="meetingcpp/news/items/Voting-Results-for-Meeting-Cpp-2018.html">Voting results for Meeting C++ 2018</a></h2>
-<p>published at 11.07.2018 11:26</p>
-<p>On Sunday the voting ended for this years conference. And the results are interesting, each talk received between 87 and 104 votes from 147 active voting sessions. In total its 10685 votes casted. So lots of folks did have a look at each talk, the average of the collected votings is then what determines the top talks at the conference. More on this below.</p>
-<h2><a href="meetingcpp/news/items/Announcing-the-student-and-support-tickets-for-Meeting-Cpp-2018.html">Announcing the student and support tickets for Meeting C++ 2018</a></h2>
-<p>published at 04.07.2018 16:10</p>
-<p>The programs for attending Meeting C++ with through a free ticket are back! You can now register for a <a href="https://meetingcpp.com/mcpp/studentprogram/">Student</a> and/or <a href="https://meetingcpp.com/mcpp/supportticket/">Support</a> ticket.&nbsp;</p>
-<h2><a href="meetingcpp/news/items/Cpp-User-Group-meetings-in-July-2018.html">C++ User Group meetings in July 2018</a></h2>
-<p>published at 03.07.2018 10:14</p>
-<p>The monthly overview on upcoming User Group meetings!</p>
-<a href="meetingcpp/news/archive/News_1.html">More News entries</a>
-<h1>Last Meeting C++ Blogroll</h1>
-<h2><a href="blog/blogroll/items/Meeting-Cpp-Blogroll-152.html">Meeting C++ Blogroll 152</a></h2>
-<p>published at 06.07.2018 11:39</p>
+      <h1>Latest Meeting C++ News</h1>
+      <h2><a href="meetingcpp/news/items/Voting-Results-for-Meeting-Cpp-2018.html">Voting results for Meeting C++
+          2018</a></h2>
+      <p>published at 11.07.2018 11:26</p>
+      <p>On Sunday the voting ended for this years conference. And the results are interesting, each talk received
+        between 87 and 104 votes from 147 active voting sessions. In total its 10685 votes casted. So lots of folks did
+        have a look at each talk, the average of the collected votings is then what determines the top talks at the
+        conference. More on this below.</p>
+      <h2><a
+          href="meetingcpp/news/items/Announcing-the-student-and-support-tickets-for-Meeting-Cpp-2018.html">Announcing
+          the student and support tickets for Meeting C++ 2018</a></h2>
+      <p>published at 04.07.2018 16:10</p>
+      <p>The programs for attending Meeting C++ with through a free ticket are back! You can now register for a <a
+          href="https://meetingcpp.com/mcpp/studentprogram/">Student</a> and/or <a
+          href="https://meetingcpp.com/mcpp/supportticket/">Support</a> ticket.&nbsp;</p>
+      <h2><a href="meetingcpp/news/items/Cpp-User-Group-meetings-in-July-2018.html">C++ User Group meetings in July
+          2018</a></h2>
+      <p>published at 03.07.2018 10:14</p>
+      <p>The monthly overview on upcoming User Group meetings!</p>
+      <a href="meetingcpp/news/archive/News_1.html">More News entries</a>
+      <h1>Last Meeting C++ Blogroll</h1>
+      <h2><a href="blog/blogroll/items/Meeting-Cpp-Blogroll-152.html">Meeting C++ Blogroll 152</a></h2>
+      <p>published at 06.07.2018 11:39</p>
 
-<a href="blog/blogroll/archive/Blogroll_1.html">More Blogroll entries</a>
-<h1>C++ Jobs</h1>
-<p><a href="https://meetingcpp.com/mcpp/jobsubmission/">Submit your own job posting!</a></p><h2><a href="jobs/items/Software-Entwickler--w-m-div--Embedded-Systems.html">Software-Entwickler (w/m/div) Embedded Systems</a></h2>
-<p>published at 29.06.2018 15:07</p>
-<p><strong>Location:</strong> Berlin</p>
-<h2><a href="jobs/items/-german-Software-Ingenieur--m-w--C--Cpp-Individualsoftware-in-Linux.html">[german] Software Ingenieur (m/w) C/ C++ Individualsoftware in Linux</a></h2>
-<p>published at 20.06.2018 11:10</p>
-<p><strong>Location:</strong> M&uuml;nchen, Deutschland</p>
-<h2><a href="jobs/items/Low-Latency-Cpp-Software-Engineer.html">Low Latency C++ Software Engineer</a></h2>
-<p>published at 13.06.2018 10:51</p>
-<p><strong>Location:</strong> Amsterdam, The Netherlands</p>
-<a href="jobs/archive/Jobs_1.html">More Jobs entries</a>
+      <a href="blog/blogroll/archive/Blogroll_1.html">More Blogroll entries</a>
+      <h1>C++ Jobs</h1>
+      <p><a href="https://meetingcpp.com/mcpp/jobsubmission/">Submit your own job posting!</a></p>
+      <h2><a href="jobs/items/Software-Entwickler--w-m-div--Embedded-Systems.html">Software-Entwickler (w/m/div)
+          Embedded Systems</a></h2>
+      <p>published at 29.06.2018 15:07</p>
+      <p><strong>Location:</strong> Berlin</p>
+      <h2><a href="jobs/items/-german-Software-Ingenieur--m-w--C--Cpp-Individualsoftware-in-Linux.html">[german]
+          Software Ingenieur (m/w) C/ C++ Individualsoftware in Linux</a></h2>
+      <p>published at 20.06.2018 11:10</p>
+      <p><strong>Location:</strong> M&uuml;nchen, Deutschland</p>
+      <h2><a href="jobs/items/Low-Latency-Cpp-Software-Engineer.html">Low Latency C++ Software Engineer</a></h2>
+      <p>published at 13.06.2018 10:51</p>
+      <p><strong>Location:</strong> Amsterdam, The Netherlands</p>
+      <a href="jobs/archive/Jobs_1.html">More Jobs entries</a>
 
-</div>
-</div><div class="footer">
-<center><p>Copyright Meetingcpp GmbH 2018 <a href="https://meetingcpp.com/Imprint.html">Imprint</a> <span style="color: #ff6600;"><a href="https://meetingcpp.com/Imprint.html#piwik_optout">Piwik Opt out</a></span> <a href="https://meetingcpp.com/PrivacyPolicy.html">Privacy Policy</a></p></center></div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright Meetingcpp GmbH 2018 <a href="https://meetingcpp.com/Imprint.html">Imprint</a> <span
+        style="color: #ff6600;"><a href="https://meetingcpp.com/Imprint.html#piwik_optout">Piwik Opt out</a></span> <a
+        href="https://meetingcpp.com/PrivacyPolicy.html">Privacy Policy</a></p>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="text/javascript">
+    function show(id) {
+      var element = document.getElementById(id);
+      if (element.getAttribute("class") != "animate-in") {
+        element.setAttribute("class", "animate-in");
+      } else {
+        element.setAttribute("class", "animate-out");
+      }
+    };
+  </script>
+  <!--./JavaScript-->
 </body>
+
 </html>
